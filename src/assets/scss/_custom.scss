@@ -1,0 +1,36 @@
+// Bootstrap variable overrides
+$enable-responsive-font-sizes: true;
+
+$primary: #fdb600;
+$light: #fff7ee;
+$dark: #2b3036;
+
+$theme-colors: (
+  "primary": $primary,
+  "light": $light,
+  "dark": $dark,
+);
+
+$body-bg: $light;
+$body-color: $dark;
+
+$font-family-sans-serif: "Axiforma", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem;
+
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 4.375;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2.125;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+
+$headings-line-height: 1.2;
+
+$input-btn-padding-y: 0.9rem;
+$input-padding-y: 1rem;
+$input-padding-x: 1rem;
+$input-border-color: #ababab;
+$input-placeholder-color: #2b3036;
