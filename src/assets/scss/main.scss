@@ -35,12 +35,40 @@ html {
     min-height: 100vh;
     background-image: url("/src/assets/images/notepad-header.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
+
+    .overlay {
+        display: none;
+    }
 }
 
 .navbar {
     margin-bottom: 80px;
+}
+
+@include media-breakpoint-down(md) {
+
+    .jumbotron {
+        .overlay {
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+
+    .navbar {
+        .navbar-brand {
+            img {
+                width: 160px;
+            }
+        }
+    }
+
 }
 
 .btn-contact {
