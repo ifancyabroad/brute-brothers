@@ -81,3 +81,8 @@ html {
         opacity: 0.4;
     }
 }
+
+#successMessage,
+#errorMessage {
+    display: none;
+}
