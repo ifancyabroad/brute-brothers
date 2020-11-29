@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: 'development',
@@ -25,14 +24,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
-        }),
-        new CopyPlugin({
-            patterns: [
-                { from: "src/src", to: "src" },
-                { from: "src/vendor", to: "vendor" },
-                { from: "src/handler.php" },
-            ],
-        }),
+        })
     ],
     output: {
         filename: '[name].bundle.js',
