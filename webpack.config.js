@@ -5,11 +5,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
+    },
+    resolve: {
+        alias: {
+            jquery: "jquery/dist/jquery.slim.js",
+        }
     },
     plugins: [
         new CleanWebpackPlugin(),
